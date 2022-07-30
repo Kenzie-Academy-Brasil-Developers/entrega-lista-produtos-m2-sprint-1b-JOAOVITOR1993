@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,9 +43,10 @@
             type="text"
             placeholder="Pesquisar por"
             class="campoBuscaPorNome"
+            id = "campoBusca"
           />
           <button
-            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
+            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome" id="botaoPesquisa"
           >
             <img src="./src/img/search.png" alt="lupa" />
           </button>
@@ -56,25 +57,13 @@
             <img src="./src/img/alert-circle.png" alt="exclamação de alerta">
             <p>Valor total dos produtos da sessão selecionada</p>
         </div>
-        <span>R$ 0.00</span>
+        <span class="total"></span>
       </section>
       <!-- CONTAINER DE PRODUTOS -->
       <section class="containerVitrine">
         <div class="containerListaProdutos">
-         <ul>
-                    <!-- Utilize esse item html como template para a construção da lista de produtos
-                    
-                    Você pode remover esses comentários depois que fizer a construção pelo DOM -->
-                    
-            
-                    <!-- <li>
-                        <img src="./src/img/maça.png" alt="Imagem maçã">
-                        <h3>Maçã</h3>
-                        <span>Hortifruti</span>
-                        <p>R$ 2.00</p>
-                    </li> -->
-                    
-                </ul>
+         <ul>    
+         </ul>
         </div>
       </section>
     </main>
