@@ -52,19 +52,33 @@
           </button>
         </div>
       </section>
-      <section class="priceContainer">
-        <div>
-            <img src="./src/img/alert-circle.png" alt="exclamação de alerta">
-            <p>Valor total dos produtos da sessão selecionada</p>
-        </div>
-        <span class="total"></span>
-      </section>
       <!-- CONTAINER DE PRODUTOS -->
       <section class="containerVitrine">
         <div class="containerListaProdutos">
-         <ul>    
-         </ul>
+         <ul></ul>
         </div>
+      
+        <section class = "containerCarrinho">
+          <span class="containerTituloImg">
+            <img src="./src/img/carrinho.png" alt="carrinho">
+            <h1 class=>Carrinho</h1>
+          </span>
+          <div class="carrinho">
+              <ul>
+                <p class ="adicioneItens">Por enquanto não temos produtos no carrinho</p>
+              </ul>
+          </div> 
+          <div class="quantidadeETotal">
+              <div>
+                  <p class="quantidade">Quantidade:</p>
+                  <p class="numeroQuantidade">0</p>
+              </div>
+              <div>
+                  <p class="total">Total:</p>
+                  <p class="valorTotal">R$ 0.00</p>
+              </div>  
+          </div> 
+        </section>
       </section>
     </main>
     <script src="./src/js/dataProdutos.js"></script>

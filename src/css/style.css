@@ -120,14 +120,13 @@ border-radius: 8px;
 .containerVitrine {
 display: flex;
 width: 100%;
-justify-content: space-evenly;
-border-radius: 50px 0;
+justify-content: space-between;
 }
 
 /* CONTAINER DE PRODUTOS */
 
 .containerListaProdutos {
-width: 100%;
+width: 80%;
 }
 
 .containerListaProdutos ul {
@@ -136,7 +135,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content:space-around;
 margin-top: 40px;
-width: 90%;
+width: 100%;
 }
 
 .containerListaProdutos ul li {
@@ -163,16 +162,16 @@ color: #212529;
 
 .containerListaProdutos ul li p {
 font-size: 0.7rem;
-color: #868e96;
-font-weight: 400;
+color: black;
+font-weight: bold;
 margin: 10px 0;
+font-size: 13px;
 }
 .containerListaProdutos ul li span {
 font-size: 0.8rem;
-font-weight: 500;
-margin-top: 10px;
+margin: 10px auto;
 display: inline-block;
-color: #212529;
+color:  #868e96;
 }
 .containerListaProdutos ul li ol {
 list-style: decimal;
@@ -181,7 +180,7 @@ font-size: 12px;
 margin-left: 15px;
 }
 .containerListaProdutos ul li ol li {
-margin: 0;
+margin: 5px auto;
 width: 100%;
 }
 .containerListaProdutos ul li button {
@@ -202,4 +201,202 @@ display: flex;
 justify-content: space-between;
 padding: 5px;
 }
- 
+
+#botaoComprar {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.containerCarrinho{
+    width: 18%;
+    height: 32rem;
+    margin-top: 40px;
+}
+
+.containerTituloImg{
+    display: flex;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: auto;
+    height: 56px;
+    background-color:  #12b886;
+    align-items:center
+}
+
+.containerTituloImg img{
+    width: 14px;
+    height: 14px;
+    margin: 10px;
+}
+
+.containerTituloImg h1{
+    color: white;
+    font-size: 16px;
+}
+
+.carrinho{
+    height: 80%;
+    overflow-x: auto;
+}
+
+.quantidadeETotal div{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 13px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.quantidadeETotal > div:first-child {
+    background-color: #F8F9FA
+}
+
+.carrinho li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.30rem;
+    margin: 1rem auto;
+}
+
+.carrinho img {
+    width: 4.30rem;
+    height: 4.30rem;
+    border-radius: 10px;
+}
+
+.carrinho button {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.6s;
+    cursor: pointer;
+
+}
+
+.carrinho button:hover {
+    border: 2px solid  #868E96;
+    transition: 0.6s;
+}
+
+.carrinho button img{
+    width: 0.7rem;
+    height: 0.8rem;
+}
+
+
+
+.containerH3SpanP {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.containerH3SpanP h3 {
+    font-weight: 500;
+}
+
+.containerH3SpanP span {
+    font-size: 13px;
+    color: #868E96;
+}
+
+.adicioneItens{
+    font-size: 15px;
+    color: #868E96;
+    text-align: center;
+    margin-top: 7.5rem;
+}
+
+
+@media(max-width:320px){
+main {
+    margin: 0 1rem;
+}
+
+.filtersContainer{
+    display: flex;
+    flex-direction: column;  
+} 
+
+#botoesContainer{
+    overflow-x: auto;
+    width:  100%;
+    margin-bottom: 1rem;
+}
+
+.containerBuscaPorNome {
+    width: 100%;
+}
+
+.containerVitrine {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerListaProdutos{
+    width: 100%;
+    height: 250px;
+}
+
+.containerListaProdutos ul {
+    margin-top: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+}
+
+.containerListaProdutos ul li {
+    margin: 0 0.5rem;
+    margin-bottom: auto;
+    min-width: 13.5rem;
+}
+
+.containerListaProdutos ul li ol {
+    display: none;    
+}
+
+.containerListaProdutos ul li img {
+    width: 100%;
+}
+
+.containerCarrinho{
+    width: 100%;
+    height: 7rem;
+    margin-top: 1rem;
+}
+
+.containerTituloImg{
+    height: 2.5rem;
+    background-color:  #12b886;
+    align-items:center
+}
+
+.adicioneItens{
+    margin: 2rem 1rem auto;
+    width: 90%;
+    
+}
+
+.quantidadeETotal div{
+    padding: 0.8rem;
+    font-weight: 500;
+
+}
+
+.carrinho li {
+    height: 4rem;
+  
+}
+
+.carrinho img {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+}
