@@ -11,7 +11,6 @@ function listarProdutos(array){
 listarProdutos(produtos)
 
 function criarCards(produto){
-    
     const li = document.createElement("li")
     const img = document.createElement("img")
     const h3 = document.createElement("h3")
@@ -166,6 +165,7 @@ function listarProdutosCarrinho(array){
 
 function criarCardCarrinho(produto){
     const li = document.createElement("li")
+    const containerImgH3SpanP = document.createElement("span")
     const img = document.createElement("img")
     const spanContainer = document.createElement("span")
     const h3 = document.createElement("h3")
@@ -179,6 +179,7 @@ function criarCardCarrinho(produto){
     })
     
     li.className = "cardCarrinho"
+    containerImgH3SpanP.className = "containerImgInf"
     img.src = produto.img
     img.alt = ` Imagem ${produto.nome}`
     spanContainer.className = "containerH3SpanP"
@@ -188,9 +189,10 @@ function criarCardCarrinho(produto){
     p.innerText = `R$ ${precoConvertido.toFixed(2)}`
     imgLixo.src = "./src/img/lixeira.png"
 
+    containerImgH3SpanP.append(img, spanContainer)
     spanContainer.append(h3, span, p)
     button.append(imgLixo)
-    li.append(img, spanContainer, button)
+    li.append(containerImgH3SpanP, button)
 
     return li
 }
@@ -200,11 +202,6 @@ function removerProdutoCarrinho(produto) {
     carrinhoCompras.splice(index,1)
     listarProdutosCarrinho(carrinhoCompras) 
 }
-
-
-
-
-
 
 
 
